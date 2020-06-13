@@ -8,7 +8,7 @@ export default function Tags({ names }: Props) {
       {names.map(name => (
         <li
           key={name}
-          className='rounded bg-gray-600 p-1 text-xs text-white mr-2 mb-2 inline-block'
+          className='rounded bg-gray-600 px-2 py-1 text-xs text-white mr-2 mb-2 inline-block'
         >
           {name}
         </li>

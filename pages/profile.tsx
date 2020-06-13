@@ -8,6 +8,7 @@ const skills = [
   'React.js',
   'React Native',
   'Node.js',
+  'Express.js',
   'GraphQL',
   'Apollo Client',
   'Apollo Server',
@@ -53,7 +54,7 @@ export default function Profile() {
           </div>
           {/* Skills */}
           <div className='border-b-2 pb-2 mb-4'>
-            <h2 className='text-3xl pl-3 border-l-4 border-teal-400 mb-4'>
+            <h2 className='text-3xl pl-3 border-l-4 border-teal-400 mb-6'>
               Technical Skills
             </h2>
             <Skills names={skills} />
@@ -62,123 +63,154 @@ export default function Profile() {
 
         {/* Right side in md */}
         <div className='col-span-2'>
-          <h2 className='text-3xl pl-3 border-l-4 border-teal-400 mb-4'>
-            Projects
-          </h2>
-          <div className='mb-4'>
-            <h3 className='text-lg font-medium text-teal-600 mb-2'>
-              Tarrazu Blog
-            </h3>
-            <div className='ml-4'>
-              <p className='mb-2'>
-                이 블로그 프로젝트 입니다. 개발하면서 필요한 팁, 프로젝트를
-                진행하면서 느낀 부분들에 대한 회고록 등을 작성하는 블로그입니다.
-              </p>
-              <Tags
-                names={[
-                  'TypeScript',
-                  'React.js',
-                  'Next.js',
-                  'Server-side Rendering',
-                  'Vercel (formerly ZEIT)',
-                ]}
-              />
-              <a
-                href='https://github.com/yuyaebean/tarrazu_blog'
-                target='_blank'
-                className='block underline italic'
-              >
-                GitHub Link
-              </a>
+          <div className='border-b-2 pb-4 mb-10'>
+            <h2 className='text-3xl pl-3 border-l-4 border-teal-400 mb-6'>
+              Projects
+            </h2>
+            <div className='mb-6'>
+              <h3 className='text-lg font-medium text-teal-600 mb-2'>
+                Tarrazu Blog
+              </h3>
+              <div className='ml-4'>
+                <p className='mb-2'>
+                  이 블로그 프로젝트 입니다. 개발하면서 필요한 팁, 프로젝트를
+                  진행하면서 느낀 부분들에 대한 회고록 등을 작성하는
+                  블로그입니다.
+                </p>
+                <Tags
+                  names={[
+                    'TypeScript',
+                    'React.js',
+                    'Next.js',
+                    'Server-side Rendering',
+                    'Vercel (formerly ZEIT)',
+                  ]}
+                />
+                <a
+                  href='https://github.com/yuyaebean/tarrazu_blog'
+                  target='_blank'
+                  className='underline italic'
+                >
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+            <div className='mb-6'>
+              <h3 className='text-lg font-medium text-teal-600 mb-2'>
+                멋쟁이 사자처럼 명지대(자연) 홈페이지
+              </h3>
+              <div className='ml-4'>
+                <p className='mb-2'>
+                  멋쟁이 사자처럼 명지대(자연) 공식 사이트입니다. 지원서 제출,
+                  과제 제출, 일정 공유 등을 할 수 있습니다.
+                </p>
+                <Tags
+                  names={[
+                    'TypeScript',
+                    'React.js',
+                    'GraphQL',
+                    'Apollo Client',
+                    'Apollo Server',
+                    'Node.js',
+                    'Prisma',
+                    'Postgresql',
+                    'Google Analytics',
+                    'Netlify',
+                    'Heroku',
+                  ]}
+                />
+                <a
+                  href='https://github.com/mju-likelion/official-server'
+                  target='_blank'
+                  className='underline italic'
+                >
+                  GitHub Link (Server)
+                </a>
+                <br />
+                <a
+                  href='https://github.com/mju-likelion/official-web'
+                  target='_blank'
+                  className='underline italic'
+                >
+                  GitHub Link (Client)
+                </a>
+              </div>
+            </div>
+            <div className='mb-4'>
+              <h3 className='text-lg font-medium text-teal-600 mb-2'>
+                한양대학교 부동산융합대학원 원우회 연락처
+              </h3>
+              <div className='ml-4'>
+                <p className='mb-2'>
+                  한양대학교 부동산융합대학원 원우회 내부용 연락처 공유
+                  서비스입니다. 관리자용 웹사이트를 구축하여 전공, 기수, 유저를
+                  관리할 수 있도록 하였고, 어플에서는 사용자 정보 공유, 교수진
+                  연락처 공유, 내 정보 수정, 공지사항 확인을 할 수 있습니다.
+                </p>
+                <Tags
+                  names={[
+                    'JavaScript',
+                    'React.js',
+                    'React Native',
+                    'GraphQL',
+                    'Apollo Client',
+                    'Apollo Server',
+                    'Node.js',
+                    'Prisma',
+                    'Postgresql',
+                    'Netlify',
+                    'Heroku',
+                  ]}
+                />
+                <a
+                  href='https://github.com/yuyaebean/hure_backend'
+                  target='_blank'
+                  className='underline italic'
+                >
+                  GitHub Link (Server)
+                </a>
+                <br />
+                <a
+                  href='https://github.com/yuyaebean/hure_admin_frontend'
+                  target='_blank'
+                  className='underline italic'
+                >
+                  GitHub Link (Admin Client)
+                </a>
+                <br />
+                <a
+                  href='https://github.com/InSooBae/HYRE-App'
+                  target='_blank'
+                  className='underline italic'
+                >
+                  GitHub Link (App)
+                </a>
+              </div>
             </div>
           </div>
-          <div className='mb-4'>
-            <h3 className='text-lg font-medium text-teal-600 mb-2'>
-              멋쟁이 사자처럼 명지대(자연) 홈페이지
-            </h3>
-            <div className='ml-4'>
-              <p className='mb-2'>
-                멋쟁이 사자처럼 명지대(자연) 공식 사이트입니다. 지원서 제출,
-                과제 제출, 일정 공유 등을 할 수 있습니다.
-              </p>
-              <Tags
-                names={[
-                  'TypeScript',
-                  'React.js',
-                  'GraphQL',
-                  'Apollo Client',
-                  'Apollo Server',
-                  'Node.js',
-                  'Prisma',
-                  'Postgresql',
-                  'Google Analytics',
-                  'Netlify',
-                  'Heroku',
-                ]}
-              />
-              <a
-                href='https://github.com/mju-likelion/official-server'
-                target='_blank'
-                className='block underline italic'
-              >
-                GitHub Link (Server)
-              </a>
-              <a
-                href='https://github.com/mju-likelion/official-web'
-                target='_blank'
-                className='block underline italic'
-              >
-                GitHub Link (Client)
-              </a>
-            </div>
-          </div>
-          <div className='mb-4'>
-            <h3 className='text-lg font-medium text-teal-600 mb-2'>
-              한양대학교 부동산융합대학원 원우회 연락처
-            </h3>
-            <div className='ml-4'>
-              <p className='mb-2'>
-                한양대학교 부동산융합대학원 원우회 내부용 연락처 공유
-                서비스입니다. 관리자용 웹사이트를 구축하여 전공, 기수, 유저를
-                관리할 수 있도록 하였고, 어플에서는 사용자 정보 공유, 교수진
-                연락처 공유, 내 정보 수정, 공지사항 확인을 할 수 있습니다.
-              </p>
-              <Tags
-                names={[
-                  'JavaScript',
-                  'React.js',
-                  'React Native',
-                  'GraphQL',
-                  'Apollo Client',
-                  'Apollo Server',
-                  'Node.js',
-                  'Prisma',
-                  'Postgresql',
-                  'Netlify',
-                  'Heroku',
-                ]}
-              />
-              <a
-                href='https://github.com/yuyaebean/hure_backend'
-                target='_blank'
-                className='block underline italic'
-              >
-                GitHub Link (Server)
-              </a>
-              <a
-                href='https://github.com/yuyaebean/hure_admin_frontend'
-                target='_blank'
-                className='block underline italic'
-              >
-                GitHub Link (Admin Client)
-              </a>
-              <a
-                href='https://github.com/InSooBae/HYRE-App'
-                target='_blank'
-                className='block underline italic'
-              >
-                GitHub Link (App)
-              </a>
+          <div className='border-b-2 pb-4 mb-10'>
+            <h2 className='text-3xl pl-3 border-l-4 border-teal-400 mb-6'>
+              Activities
+            </h2>
+            <div className='mb-6'>
+              <h3 className='text-lg font-medium text-teal-600 mb-2'>
+                멋쟁이 사자처럼
+              </h3>
+              <div className='ml-4'>
+                <p className='mb-2'>
+                  멋쟁이 사자처럼 명지대(자연)에 2019년 9월에 들어와서, 현재
+                  멋쟁이 사자처럼 명지대(자연) 8기 (2020년) 대표를 맡고
+                  있습니다. 멋쟁이 사자처럼은 이두희 대표를 필두로 2019년까지는
+                  "내가 직접 프로그래밍 하겠다.", "Hack your life!"를
+                  캐치프레이즈로 하여 비전공자들 혹은 전공자 중에 웹프로그래밍을
+                  직접 하지 못하는 사람들에게 스스로 만들고 싶은 서비스를 만들
+                  수 있도록 교육해주는 코딩 교육 동아리였습니다만, 2020년에는
+                  "스타트업 사관학교"로 새로운 발돋움을 준비하고 변화해 가는
+                  중입니다. 자신이 원하는 아이디어로 스스로 서비스를 만들고, 더
+                  나아가 세상을 바꾸는 서비스로 창업을 하는 것까지를 목표로 삼고
+                  있는 동아리이자 단체입니다.
+                </p>
+              </div>
             </div>
           </div>
         </div>
