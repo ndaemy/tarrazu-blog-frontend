@@ -1,12 +1,12 @@
 import Nav from '../components/nav'
 
-export default function Index() {
+export default function Home() {
   return (
-    <div>
+    <>
       <Nav />
       <div className='hero'>
         <h1 className='title'>Tarrazu Blog</h1>
       </div>
-    </div>
+    </>
   )
 }
