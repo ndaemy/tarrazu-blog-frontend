@@ -1,12 +1,11 @@
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <>
-      <Nav />
+    <Layout>
       <div className='hero'>
         <h1 className='title'>Tarrazu Blog</h1>
       </div>
-    </>
+    </Layout>
   )
 }
