@@ -5,7 +5,7 @@ const links = [{ href: 'https://github.com/yuyaebean', label: 'GitHub' }]
 export default function Nav() {
   return (
     <nav>
-      <ul className='flex justify-between items-center p-8 md:px-32'>
+      <ul className='flex justify-between items-center py-8'>
         <li>
           <Link href='/'>
             <a className='text-teal-500 no-underline mr-8'>Home</a>
