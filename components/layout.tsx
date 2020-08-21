@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from './nav'
+import Nav from './Nav'
 
 type Props = {
   title?: string

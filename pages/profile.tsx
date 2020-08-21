@@ -1,6 +1,6 @@
-import Layout from '../components/layout'
-import Skills from '../components/profile/skills'
-import Tags from '../components/profile/tags'
+import Layout from '../components/Layout'
+import Skills from '../components/profile/Skills'
+import Tags from '../components/profile/Tags'
 
 const skills = [
   'JavaScript',
